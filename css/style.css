@@ -3,7 +3,6 @@ html {
     min-height: 100%;
     min-width: 360px;
 }
-
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
@@ -12,9 +11,24 @@ body {
     min-width: 400px;
 }
 
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .vertical-bottom {
     position: absolute;
     bottom: 0;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
 }
 
 .bg-green {
@@ -25,13 +39,13 @@ body {
     background-color: white;
 }
 
-.bg-light-grey {
-    background-color: #f6f6f6;
-}
+/*.bg-light-grey {*/
+    /*background-color: #f6f6f6;*/
+/*}*/
 
 .form-group .form-control {
     background-color: #f6f6f6;
-    border-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0,0,0,0);
 }
 
 .color-white {
