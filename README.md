@@ -1,21 +1,23 @@
 # land_page
 
-## Steps  
+## Steps    
+1) Initialized a new repo.
 
-   (Error Logs - 0.0) Updated MAMP and it broke all my virtual hosts. Spent time 
-                      troubleshooting to no avail. Started over without using Laravel.   
-1) Initialized a new repo
-2) Created project files with composer
-3) Added db connect files
-4) Added php files/includes
+       (Hurdle Logs - 1.5) Updated MAMP and it broke all my virtual hosts. Spent time 
+                           troubleshooting to no avail. Started over without Laravel. 
+                      
+2) Created project files with composer.
+3) Added db connect files.
+4) Added html,css,php, and includes (etc...) files.
 
-   (Error Logs - 4.5) Command Z'd for too long and deleted all the front end development 
-                      progress I made in an un-initialized repo (They say, like death, 
-                      stupidity is felt more by others). Called it a night after finding/saving 
-                      all of my files from the terminal.
+       (Hurdle Logs - 4.5) Command Z'd for too long and deleted all the front end development progress I 
+                           made in an un-initialized repo (I knew better, but so as they say, like death, 
+                           stupidity is felt more by others). Called it a night after finding/saving all 
+                           of my files from the terminal.
              
-5) Extracted and added PSD image assets
+5) Removed text, and converted, extracted, and added PSD image assets to repo.
 
-   (Error Logs - 5.5) Apache served stops working in MAMP this morning, grrr. Decide to restart
-                      computer since nothing I google is working to fix Apache. Everything is 
-                      automagically fixed (i.e. vhosts, apache, I'm thinner, etc...)!!!
+       (Hurdle Logs - 5.5) Apache server stopped working in MAMP this morning, grrr. Decided to restart
+                           computer since nothing I googled worked to fix Apache. And, everything 
+                           (i.e. vhosts, apache, I'm thinner, etc...) was automagically fixed from 
+                           the restart!!!
