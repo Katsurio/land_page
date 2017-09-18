@@ -13,8 +13,21 @@ body {
 
 .header-container {
     background: url("../images/hero-without-logo.png") no-repeat scroll left top;
-    background-size: contain;
-    min-height: 1210px;
+    background-size: cover;
+}
+
+.waist-container {
+    background: url("../images/body-panel.png") no-repeat scroll left top;
+    background-size: cover;
+    min-height: 550px;
+}
+
+.green-div {
+    height: 475px;
+    transform: translateY(-10%);
+    min-height: 475px;
+    min-width: 735px;
+
 }
 
 .vertical-center {
@@ -24,13 +37,25 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.waist-left {
+    border-right: 3px solid white;
+}
+
+.font-w-100 {
+    font-weight: 100;
+}
+
+.waist-right h6 {
+    line-height: 2.1;
+}
+
 .vertical-bottom {
-    position: absolute;
     bottom: 0;
 }
 
 .position-relative {
     position: relative;
+    height: auto;
 }
 
 .position-absolute {
@@ -59,7 +84,7 @@ body {
 }
 
 .font-sz-lg {
-    font-size: 3.2rem;
+    font-size: 2rem;
 }
 
 .font-sz-md {

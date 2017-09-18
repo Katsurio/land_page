@@ -11,16 +11,20 @@ function CreateRow()
 {
     if (isset($_POST['submit'])) {
         global $conn;
-        $username = $_POST['username'];
-        $password = $_POST['password'];
+        $fname = $_POST['fname'];
+        $lname = $_POST['lname'];
+        $email = $_POST['email'];
+        $zcode = $_POST['zcode'];
 
-        $username = mysqli_real_escape_string($conn, $username);
-        $password = mysqli_real_escape_string($conn, $password);
+        $fname = mysqli_real_escape_string($conn, $fname);
+        $lname = mysqli_real_escape_string($conn, $lname);
+        $email = mysqli_real_escape_string($conn, $email);
+        $zcode = mysqli_real_escape_string($conn, $zcode);
 
-        $password = encryptPassword($password);
+//        $password = encryptPassword($password);
 
-        $query = "INSERT INTO users(username, password) ";
-        $query .= "VALUES ('$username', '$password')";
+        $query = "INSERT INTO users(fname, lname, email) "; // TODO: Add lat and lng after
+        $query .= "VALUES ('$fname', '$lname', '$email')";
 
         $result = mysqli_query($conn, $query);
         if (!$result) {

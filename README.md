@@ -3,13 +3,14 @@
 ## Steps    
 1) Initialized a new repo.
 
-       (Hurdle Logs - 1.5) Updated MAMP and it broke all my virtual hosts. Spent time 
+       (Hurdle Logs - 1.5) Updated MAMP and it broke all my virtual hosts and made 
+                           it impossible to connect to the db/PHPMyAdmin. Spent time 
                            troubleshooting to no avail. Started over without Laravel. 
                       
 2) Created project files with composer.
 3) Added db connect files.
 4) Added html,css,php, and includes (etc...) files.
-5) Finished footer form.
+5) Finished footer_form styling.
 
        (Hurdle Logs - 5.5) Command Z'd for too long and deleted all the front end development progress I 
                            made in an un-initialized repo (I knew better, but so as they say, like death, 
@@ -22,4 +23,5 @@
                            computer since nothing I googled worked to fix Apache. And, everything 
                            (i.e. vhosts, apache, I'm thinner, etc...) was automagically fixed from 
                            the restart!!!
-7) Finished header.
+7) Finished header styling.
+8) Finished header styling.
