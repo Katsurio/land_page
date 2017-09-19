@@ -6,9 +6,10 @@ html {
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
-    background-color: lightgreen;
+    background-color: white;
     font-family: 'Lato', sans-serif;
-    min-width: 400px;
+    /*min-width: 400px;*/
+    /* min-width: 980px for md, 925px grn div ; min-width: 768px for sm; min-width: 575px for xs (header needs work here); min-width: 400px for xs; */
 }
 
 .header-container {
@@ -19,14 +20,18 @@ body {
 .waist-container {
     background: url("../images/body-panel.png") no-repeat scroll left top;
     background-size: cover;
-    min-height: 550px;
+    min-height: 500px;
 }
 
 .green-div {
-    height: 475px;
     transform: translateY(-10%);
-    min-height: 475px;
-    min-width: 735px;
+    /*max-height: 475px;*/
+    /*max-width: 735px;*/
+
+    display: flex;
+    flex-flow: row wrap;
+    /* This aligns items to the end line on main-axis */
+    justify-content: flex-end;
 
 }
 
@@ -38,7 +43,13 @@ body {
 }
 
 .waist-left {
-    border-right: 3px solid white;
+    /*border-right: 3px solid white;*/
+    margin: auto;
+}
+
+.waist-right {
+    margin: auto;
+    border-left: 3px solid white;
 }
 
 .font-w-100 {
@@ -70,13 +81,10 @@ body {
     background-color: white;
 }
 
-/*.bg-light-grey {*/
-    /*background-color: #f6f6f6;*/
-/*}*/
-
 .form-group .form-control {
     background-color: #f6f6f6;
     border-color: rgba(0,0,0,0);
+    font-size: .8rem;
 }
 
 .color-white {
@@ -88,7 +96,7 @@ body {
 }
 
 .font-sz-md {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 
 .font-sz-sm {
@@ -101,4 +109,34 @@ body {
 
 .w-200px {
     width: 200px;
+}
+
+form button.btn.bg-green {
+    min-width: 180px;
+}
+
+
+
+/* Medium screens */
+@media all and (max-width: 1115px) {
+    .green-div {
+        min-width: 655px;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+/* Small screens */
+@media all and (max-width: 767px) {
+    .green-div {
+        min-width: initial;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        position: relative;
+    }
+    .waist-right {
+        border-left: none;
+    }
 }
