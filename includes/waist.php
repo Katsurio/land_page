@@ -1,7 +1,7 @@
 <div class="waist-container w-100 position-relative">
-    <div class="green-div col-md-7 offset-md-3 bg-green position-absolute p-md-4 p-sm-3 p-xs-5 mr-md-5">
+    <div class="green-div col-md-7 offset-md-3 bg-green position-absolute p-md-4 p-sm-3 p-4 mr-md-5">
         <div class="waist-left col-md-6 pt-md-5 pb-md-5 pl-md-0 d-md-inline-block m-md-0 position-relative">
-            <h2 class="text-left text-uppercase .font-w-100 font-sz-lg color-white m-sm-4 m-xs-5">
+            <h2 class="text-left text-uppercase .font-w-100 font-sz-lg color-white m-sm-4">
                 Donizzle had dolor. shizznit quiz owned
             </h2>
         </div>

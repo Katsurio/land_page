@@ -12,6 +12,7 @@ $lname = mysqli_real_escape_string($conn, $lname);
 $email = mysqli_real_escape_string($conn, $email);
 $zcode = mysqli_real_escape_string($conn, $zcode);
 $zcode = sanitize_int($zcode);
+
 /**
  * @function - Converts zip code into latitude/longitude.
  * @name - getLatLngCoords
@@ -35,8 +36,15 @@ $latlng = getLatLngCoords($zcode);
 $lat = $latlng['lat'];
 $lng = $latlng['lng'];
 
+$fname = sanitize_html_string($fname);
+$lname = sanitize_html_string($lname);
+
 $fname = sanitize_paranoid_string($fname);
 $lname = sanitize_paranoid_string($lname);
+
+$fname = sanitize_sql_string($fname);
+$lname = sanitize_sql_string($lname);
+
 $email = sanitize_html_string($email);
 $email = sanitize_sql_string($email);
 

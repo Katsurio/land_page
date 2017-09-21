@@ -25,13 +25,10 @@ function grabThenSendFormVals() {
         data: data,
         method: 'POST',
         success: function (resp) {
-            $('.formgroup input').toggleClass("bg-success");
-
-            console.log(resp);
+            alert(resp);
         },
         error: function (resp) {
-            console.log("error: ", resp);
-            $('.formgroup input').toggleClass("bg-danger");
+            alert("error: ", resp);
         }
     });
 }

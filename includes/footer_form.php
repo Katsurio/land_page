@@ -1,10 +1,10 @@
 
 
-    <div class="container vertical-bottom w-100 bg-white p-md-0 p-md-3">
+    <div class="container vertical-bottom w-100 bg-white p-md-0 p-md-3 p-3 pt-5 pb-5">
         <div class="offset-md-2 col-md-8" style="background-color: white;">
 
-            <h1 class="text-center font-weight-bold mb-md-3 mt-md-5 m-sm-4 m-xs-5 font-sz-lg">Sizzle eu uhuh</h1>
-            <h5 class="text-center text-muted mb-md-5 m-sm-4 m-xs-5 font-sz-md">Praesent nec turpis for sure leo tellivizzle  velizzle bow wow wow da bomb</h5>
+            <h1 class="text-center font-weight-bold mb-md-3 mt-md-5 m-sm-4 font-sz-lg">Sizzle eu uhuh</h1>
+            <h5 class="text-center text-muted mb-md-5 m-sm-4 font-sz-md">Praesent nec turpis for sure leo tellivizzle  velizzle bow wow wow da bomb</h5>
             <form id="form" action="index.php" method="post" class="font-sz-zero">
                 <div class="form-group col-md-6 d-inline-block p-md-1 mb-md-2">
                     <input id="fName" type="text" name="fname" class="form-control bg-light-grey" placeholder="First Name (Required)">

@@ -32,4 +32,11 @@
                            being one of them. Solving this gave me a brief moment of respite.
 
 10) Finished: zip code conversion using googleto latitude/longitude coordinates.
-11) In Progress: add validation.
+11) Finished: add an OWASP validation library to sanitize form inputs.
+
+Improvements I plan on making either this weekend or the following:
+-Better visual cues for Ajax call/sql insert on success/error. 
+-Refactor to utilize Laravel's built in form validation.
+-I'm sure I'll think of more after I start up again, but I need sleep. 
+
+Thanks for reading this!
