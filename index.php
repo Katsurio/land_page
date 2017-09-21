@@ -1,6 +1,4 @@
 <?php include "db.php"; ?>
-<?php //include "convertZipCode.php"; ?>
-<?php //CreateRow(); ?>
 
 <?php include "includes/head.php"; ?>
 

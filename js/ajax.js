@@ -1,14 +1,15 @@
 jQuery(document).ready(function ($) {
-
     $('#form').on('submit', function (e) {
         e.preventDefault();
-        convertZCode();
+        grabThenSendFormVals();
     });
-
 });
 
-//TODO: add ids to vals
-function convertZCode() {
+/**
+ * Grabs values from the form, then sends
+ * them to the backend for processing.
+ */
+function grabThenSendFormVals() {
     let data = {
         fname: $('#fName').val(),
         lname: $('#lName').val(),
@@ -16,25 +17,21 @@ function convertZCode() {
         zcode: $('#zip').val()
     };
 
-    alert(data);
-
+    if(!data.fname || !data.lname || !data.email || !data.zcode) {
+        return alert("Please ensure everything is filled out properly, thank you!");
+    }
     jQuery.ajax({
         url: 'convertZipCode.php',
         data: data,
         method: 'POST',
         success: function (resp) {
-            console.log(resp);
+            $('.formgroup input').toggleClass("bg-success");
 
+            console.log(resp);
         },
         error: function (resp) {
-            console.log("error")
+            console.log("error: ", resp);
+            $('.formgroup input').toggleClass("bg-danger");
         }
     });
-    // $.ajax({
-    //     url: "test.html",
-    //     context: document.body
-    // }).done(function () {
-    //     $(this).addClass("done");
-    // });
-
 }
